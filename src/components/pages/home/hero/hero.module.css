@@ -1,0 +1,19 @@
+.heroImage {
+  border-radius: 50%;
+}
+
+.hero {
+  display: flex;
+  height: calc(100vh - var(--navbar-height));
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.heroButtons {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--navbar-height);
+  padding: 0 1rem;
+}
+
+.navbarLinks {
+  font-size: 0.9rem;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.link:hover {
+  transform: translateY(-3px);
+  text-decoration: none;
+  text-shadow: 0px 9px 15px var(--main-font-color);
+}
