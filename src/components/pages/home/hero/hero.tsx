@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './hero.module.css';
-import PrimaryButton from '@/components/ui/primaryButton/primaryButton';
 import Section from '@/components/common/section/section';
+import HeroButtons from './heroButtons/heroButtons';
 
 const Hero = () => {
   return (
@@ -16,10 +16,7 @@ const Hero = () => {
           have a passion for web development and love to create for web and
           mobile devices.
         </p>
-        <div className={styles.heroButtons}>
-          <PrimaryButton>Get in touch</PrimaryButton>
-          <PrimaryButton outlined>See my work</PrimaryButton>
-        </div>
+        <HeroButtons />
       </div>
       <div>
         <Image

@@ -1,0 +1,25 @@
+.singleProjectInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.singleProjectContainer {
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.image {
+  border-radius: 4px;
+}
+
+.text {
+  font-size: 0.9rem;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

@@ -5,9 +5,16 @@ interface SectionProps {
   primary?: boolean;
   right?: boolean;
   id?: string;
+  singleColumn?: boolean;
 }
 
-const Section = ({ children, primary, right, id }: SectionProps) => {
+const Section = ({
+  children,
+  primary,
+  right,
+  id,
+  singleColumn,
+}: SectionProps) => {
   return (
     <section
       id={id}
@@ -19,7 +26,9 @@ const Section = ({ children, primary, right, id }: SectionProps) => {
     >
       <div
         className={
-          right
+          singleColumn
+            ? `${styles.wrapper} ${styles.singleColumn}`
+            : right
             ? `${styles.wrapper} ${styles.wrapperRight}`
             : `${styles.wrapper} ${styles.wrapperLeft}`
         }

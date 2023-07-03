@@ -5,18 +5,6 @@
 .hero {
 }
 
-.heroButtons {
-  margin: 1rem 0;
-  display: flex;
-  gap: 1rem;
-}
-
 .heroText h1 {
   font-size: 2.3rem;
-}
-
-@media (max-width: 830px) {
-  .heroButtons {
-    flex-direction: column;
-  }
 }
