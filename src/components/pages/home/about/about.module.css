@@ -1,0 +1,15 @@
+.aboutImage {
+  border-radius: 4px;
+}
+
+.aboutText {
+  margin-left: 2rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 830px) {
+  .aboutText {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}

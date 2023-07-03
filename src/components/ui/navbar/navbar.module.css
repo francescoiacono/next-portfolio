@@ -1,9 +1,16 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--background-color);
   height: var(--navbar-height);
-  padding: 0 1rem;
+  padding: 0 2rem;
+  margin: 0;
+  z-index: 1000;
 }
 
 .navbarLinks {
@@ -16,10 +23,19 @@
 .link {
   transition: all 0.3s ease;
   background-color: transparent;
+  font-weight: bold;
 }
 
 .link:hover {
-  transform: translateY(-3px);
+  cursor: pointer;
   text-decoration: none;
   text-shadow: 0px 9px 15px var(--main-font-color);
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+
+.logo:hover {
+  text-shadow: none;
 }

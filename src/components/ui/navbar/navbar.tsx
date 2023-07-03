@@ -1,30 +1,30 @@
+'use client';
 import styles from './navbar.module.css';
 import Link from 'next/link';
 
 const Navbar = () => {
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav className={styles.navbar}>
-      <h1>FI</h1>
+      <div
+        className={`${styles.logo} ${styles.link}`}
+        onClick={() => scrollTo('hero')}
+      >
+        FI
+      </div>
       <ul className={styles.navbarLinks}>
-        <li>
-          <Link className={styles.link} href='/'>
-            Home
-          </Link>
+        <li></li>
+        <li className={styles.link} onClick={() => scrollTo('about')}>
+          About
         </li>
-        <li>
-          <Link className={styles.link} href='about'>
-            About
-          </Link>
+        <li className={styles.link} onClick={() => scrollTo('about')}>
+          Projects
         </li>
-        <li>
-          <Link className={styles.link} href='projects'>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.link} href='contact'>
-            Contact
-          </Link>
+        <li className={styles.link} onClick={() => scrollTo('about')}>
+          Contact
         </li>
       </ul>
     </nav>
