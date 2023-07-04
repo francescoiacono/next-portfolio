@@ -7,11 +7,11 @@
   --primary-btn-text-dark: #1a1a1a;
   --primary-btn-text-light: #e2e2e2;
 
+  --section-secondary-background: #e2e2e2;
+  --section-secondary-font-color: #161616;
+
   --accent-color: #4e4e4e;
   --navbar-height: 4rem;
-}
-
-[data-theme='dark'] {
 }
 
 html,
@@ -34,12 +34,7 @@ body {
 
 a {
   color: var(--main-color);
-  text-decoration: none;
   font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .gradientText {

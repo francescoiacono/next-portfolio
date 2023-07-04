@@ -1,8 +1,9 @@
 import Section from '@/components/common/section/section';
 import styles from './projects.module.css';
-import Image from 'next/image';
 import SingleProject from './singleProject/singleProject';
 import Divider from '@/components/ui/divider/divider';
+
+import { projectsData } from '@/data';
 
 const Projects = () => {
   return (
@@ -10,9 +11,9 @@ const Projects = () => {
       <div className={styles.wrapper}>
         <h1>Projects</h1>
         <div className={styles.projects}>
-          <SingleProject />
-          <Divider />
-          <SingleProject />
+          {projectsData.map((project) => (
+            <SingleProject key={project.name} project={project} />
+          ))}
         </div>
       </div>
       <div></div>

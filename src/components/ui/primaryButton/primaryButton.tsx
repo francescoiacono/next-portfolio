@@ -1,7 +1,6 @@
 'use client';
 
 import styles from './primaryButton.module.css';
-import { useRouter } from 'next/navigation';
 
 interface PrimaryButtonProps {
   children: React.ReactNode;
@@ -22,10 +21,8 @@ const PrimaryButton = ({
   type,
   disabled,
 }: PrimaryButtonProps) => {
-  const router = useRouter();
-
   const handleClick = () => {
-    if (href) router.push(href);
+    if (href) window.open(href, '_blank');
   };
 
   return (

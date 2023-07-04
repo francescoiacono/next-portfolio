@@ -28,8 +28,8 @@
 }
 
 .secondary {
-  background-color: white;
-  color: black;
+  background-color: var(--section-secondary-background);
+  color: var(--section-secondary-font-color);
 }
 
 .primary {

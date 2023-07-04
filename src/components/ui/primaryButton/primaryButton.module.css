@@ -4,6 +4,7 @@
   padding: 12px 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.3rem;
   border-radius: 4px;
   font-size: 16px;

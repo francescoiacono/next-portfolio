@@ -1,6 +1,8 @@
 .singleProjectInfo {
   display: flex;
   justify-content: center;
+
+  align-items: center;
 }
 
 .singleProjectContainer {
@@ -15,10 +17,16 @@
   font-size: 0.9rem;
 }
 
-.buttons {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.text > p {
+  margin-right: 1rem;
+}
+
+@media (max-width: 500px) {
+  .singleProjectInfo {
+    flex-direction: column;
+  }
+
+  .text {
+    margin: 1rem 0;
+  }
 }
