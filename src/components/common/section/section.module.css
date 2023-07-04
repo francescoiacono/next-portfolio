@@ -6,7 +6,7 @@
 
 .wrapper {
   width: 70%;
-  margin: 0 auto;
+  margin: var(--navbar-height) auto;
 
   justify-items: center;
   align-items: center;
@@ -40,6 +40,7 @@
 @media (max-width: 830px) {
   .wrapper {
     grid-template-columns: 1fr;
+    margin: 1rem 0;
     width: 100%;
     padding: 1rem;
     gap: 1rem;

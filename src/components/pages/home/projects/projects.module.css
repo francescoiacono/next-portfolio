@@ -1,5 +1,4 @@
 .wrapper {
-  margin: 3rem 0;
 }
 
 .projects {
@@ -9,10 +8,6 @@
 }
 
 @media (max-width: 830px) {
-  .wrapper {
-    margin: 1rem 0;
-  }
-
   .projects {
     gap: 2rem;
   }
