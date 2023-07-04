@@ -1,14 +1,19 @@
 import Section from '@/components/common/section/section';
 import styles from './contact.module.css';
-import ContactForm from './contactForm/contactForm';
+import Image from 'next/image';
+import ContactList from './contactList/contactList';
 
 const Contact = () => {
   return (
-    <Section id='contact' singleColumn>
-      <div className={styles.wrapper}>
-        <h1>Contact</h1>
-        <ContactForm />
-      </div>
+    <Section id='contact' right>
+      <Image
+        src='/images/contact/contact-memoji.png'
+        alt='Placeholder'
+        width={300}
+        height={300}
+      />
+
+      <ContactList />
     </Section>
   );
 };
