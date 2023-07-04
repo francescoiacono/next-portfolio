@@ -2,8 +2,18 @@
   margin: 3rem 0;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 @media (max-width: 830px) {
   .wrapper {
     margin: 1rem 0;
+  }
+
+  .projects {
+    gap: 2rem;
   }
 }

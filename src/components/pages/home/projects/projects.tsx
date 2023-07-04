@@ -1,8 +1,6 @@
 import Section from '@/components/common/section/section';
 import styles from './projects.module.css';
 import SingleProject from './singleProject/singleProject';
-import Divider from '@/components/ui/divider/divider';
-
 import { projectsData } from '@/data';
 
 const Projects = () => {
