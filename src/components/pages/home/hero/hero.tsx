@@ -21,7 +21,7 @@ const Hero = () => {
       <div>
         <Image
           className={styles.heroImage}
-          src='/placeholder_250x250.svg'
+          src='/images/memoji.png'
           width={250}
           height={250}
           alt='hero'
