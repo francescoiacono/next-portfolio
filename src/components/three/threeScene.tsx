@@ -8,6 +8,10 @@ import styles from './threeScene.module.css';
 import Church from './church/church';
 
 const Scene = () => {
+  const degToRad = (deg: number) => {
+    return deg * (Math.PI / 180);
+  };
+
   return (
     <div className={styles.scene}>
       <Canvas flat shadows dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
@@ -16,12 +20,14 @@ const Scene = () => {
           position={[2.5, 8, 5]}
           shadow-mapSize={[1024, 1024]}
         >
-          <orthographicCamera
-            attach='shadow-camera'
-            args={[-10, 10, 10, -10]}
+          <OrbitControls
+            rotateSpeed={0.1}
+            enableZoom={false}
+            enablePan={false}
+            enableDamping={false}
+            maxPolarAngle={degToRad(45)}
+            minPolarAngle={degToRad(25)}
           />
-
-          <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
             <Church />
