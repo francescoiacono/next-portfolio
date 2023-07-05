@@ -1,16 +1,11 @@
 import Section from '@/components/common/section/section';
 import styles from './about.module.css';
 import Image from 'next/image';
+import Scene from '@/components/three/threeScene';
 const About = () => {
   return (
     <Section right id='about'>
-      <Image
-        className={styles.aboutImage}
-        src='placeholder_300x200.svg'
-        width={300}
-        height={200}
-        alt='placeholder'
-      />
+      <Scene />
       <div className={styles.aboutText}>
         <h1>About</h1>
         <p>

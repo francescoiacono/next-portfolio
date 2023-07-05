@@ -1,0 +1,13 @@
+.scene {
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .scene {
+    min-height: 20rem;
+  }
+}
