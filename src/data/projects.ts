@@ -34,7 +34,7 @@ export const projectsData: Project[] = [
     description: `When I was first exploring the power of Next.js, I made this simple URL shortener that allows users to create short links and redirect them to the original URL. The application uses MongoDB to store the links and Next.js to handle the routing.`,
     image: '/placeholder_200x200.svg',
     githubUrl: 'https://github.com/francescoiacono/exploring-nextjs',
-    liveUrl: 'enjs.vercel.app',
+    liveUrl: 'https://enjs.vercel.app/',
     technologies: ['Next.js', 'TypeScript', 'CSS', 'MongoDB'],
   },
 ];
