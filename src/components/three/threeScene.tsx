@@ -1,8 +1,8 @@
 'use client';
 
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { Suspense } from 'react';
+import { Suspense, useRef } from 'react';
 import Loader from './loader/loader';
 import styles from './threeScene.module.css';
 import Church from './church/church';
@@ -25,8 +25,6 @@ const Scene = () => {
             enableZoom={false}
             enablePan={false}
             enableDamping={false}
-            maxPolarAngle={degToRad(45)}
-            minPolarAngle={degToRad(25)}
           />
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
