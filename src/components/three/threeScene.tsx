@@ -22,9 +22,10 @@ const Scene = () => {
         >
           <OrbitControls
             rotateSpeed={0.1}
-            enableZoom={false}
             enablePan={false}
             enableDamping={false}
+            maxDistance={700}
+            minDistance={200}
           />
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
