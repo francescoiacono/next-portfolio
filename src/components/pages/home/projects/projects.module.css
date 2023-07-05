@@ -11,4 +11,9 @@
   .projects {
     gap: 2rem;
   }
+
+  .wrapper {
+    text-align: left;
+    align-items: flex-start;
+  }
 }

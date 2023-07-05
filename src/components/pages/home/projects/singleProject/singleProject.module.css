@@ -24,8 +24,6 @@
 @media (max-width: 500px) {
   .singleProjectInfo {
     flex-direction: column;
-
-    text-align: left;
   }
 
   .text {

@@ -4,3 +4,11 @@
 .heroText h1 {
   font-size: 2.3rem;
 }
+
+.heroText h2 {
+  font-weight: 200;
+}
+
+.name {
+  font-weight: 500;
+}
