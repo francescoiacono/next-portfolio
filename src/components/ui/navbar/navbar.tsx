@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import styles from './navbar.module.css';
 import { scrollTo } from '@/utils';
 
@@ -22,6 +23,15 @@ const Navbar = () => {
           </li>
           <li className={styles.link} onClick={() => scrollTo('contact')}>
             Contact
+          </li>
+          <li>
+            <Link
+              className={styles.link}
+              target='_blank'
+              href='/assets/cv/Francesco_CV.pdf'
+            >
+              CV
+            </Link>
           </li>
         </ul>
       </div>

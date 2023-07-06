@@ -33,7 +33,7 @@ const Church = () => {
     ref.current.rotation.y += 0.1 * delta;
   });
 
-  let churchModel = useGLTF('/chiesetta3.glb');
+  let churchModel = useGLTF('/assets/scenes/chiesetta3.glb');
 
   return <primitive ref={ref} object={churchModel.scene} scale={28} />;
 };

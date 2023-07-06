@@ -15,7 +15,7 @@ const ContactList = () => {
 
       <ul className={styles.list}>
         <li>
-          <a
+          <Link
             href='https://linkedin.com/in/cesco-iacono'
             target='_blank'
             rel='noopener noreferrer'
@@ -26,10 +26,10 @@ const ContactList = () => {
               width={iconsSize}
               height={iconsSize}
             />
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href='https://github.com/francescoiacono'
             target='_blank'
             rel='noopener noreferrer'
@@ -40,7 +40,7 @@ const ContactList = () => {
               width={iconsSize}
               height={iconsSize}
             />
-          </a>
+          </Link>
         </li>
         <li>
           <Link href='mailto:contact@francescoiacono.co.uk'>
