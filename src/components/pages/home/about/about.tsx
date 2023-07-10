@@ -4,8 +4,7 @@ import Image from 'next/image';
 import Scene from '@/components/three/threeScene';
 const About = () => {
   return (
-    <Section right id='about'>
-      <Scene />
+    <Section id='about'>
       <div className={styles.aboutText}>
         <h1>About</h1>
         <p>
@@ -27,6 +26,7 @@ const About = () => {
           imagination to life.`}
         </p>
       </div>
+      <Scene />
     </Section>
   );
 };

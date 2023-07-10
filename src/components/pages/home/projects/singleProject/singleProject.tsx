@@ -23,13 +23,6 @@ const SingleProject = ({ project }: SingleProjectProps) => {
             liveUrl={project.liveUrl}
           />
         </div>
-        <Image
-          src={project.image}
-          width={200}
-          height={200}
-          alt=''
-          className={styles.image}
-        />
       </div>
     </div>
   );
