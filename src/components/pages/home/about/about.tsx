@@ -1,6 +1,5 @@
 import Section from '@/components/common/section/section';
 import styles from './about.module.css';
-import Image from 'next/image';
 import Scene from '@/components/three/threeScene';
 const About = () => {
   return (
