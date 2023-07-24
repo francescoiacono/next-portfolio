@@ -12,11 +12,14 @@ export const projectsData: Project[] = [
   {
     id: '1',
     name: 'ChipWiz',
-    description: `This project is an poker chips counter application that will keep track of your poker chips when there are none around. Each player's state, including their role as a dealer, small blind, or big blind, as well as their current chip count and betting status, is carefully managed and updated throughout the game. The application implements the complex game logic and betting rules of poker, including stage progression from Pre-Flop to Showdown and determining the next player's turn, taking into account various game conditions such as folding or going all-in.`,
+    description: `This project is an poker chips counter application that will keep track of your poker chips when there are none around. 
+    Each player's state, including their role as a dealer, small blind, or big blind, as well as their current chip count and betting status, 
+    is carefully managed and updated throughout the game. The application implements the complex game logic and betting rules of poker,
+    including stage progression from Pre-Flop to Showdown and determining the next player's turn, taking into account various game conditions such as folding or going all-in.`,
     image: '/placeholder_200x200.svg',
-    githubUrl: 'https://github.com/francescoiacono/chipwiz',
-    liveUrl: 'https://chipwiz.vercel.app/',
-    technologies: ['Next.js', 'TypeScript', 'CSS'],
+    githubUrl: 'https://github.com/francescoiacono/chipwiz-v2',
+    liveUrl: 'https://chipwiz.app/',
+    technologies: ['Next.js', 'TypeScript', 'CSS', 'Firebase'],
   },
   {
     id: '2',

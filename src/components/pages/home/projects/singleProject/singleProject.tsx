@@ -1,10 +1,8 @@
-import PrimaryButton from '@/components/ui/primaryButton/primaryButton';
 import Image from 'next/image';
 import styles from './singleProject.module.css';
 import { Project } from '@/data';
 import ProjectButtons from '../projectButtons/projectButtons';
 import ProjectTechnologies from '../projectTechnologies/projectTechnologies';
-import Divider from '@/components/ui/divider/divider';
 
 interface SingleProjectProps {
   project: Project;
