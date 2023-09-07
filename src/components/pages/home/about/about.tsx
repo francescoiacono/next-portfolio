@@ -1,6 +1,11 @@
 import Section from '@/components/common/section/section';
 import styles from './about.module.css';
-import Scene from '@/components/three/threeScene';
+import dynamic from 'next/dynamic';
+
+const Scene = dynamic(() => import('@/components/three/threeScene'), {
+  ssr: false,
+});
+
 const About = () => {
   return (
     <Section id='about'>

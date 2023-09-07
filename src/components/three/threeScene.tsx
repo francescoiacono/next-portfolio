@@ -1,17 +1,13 @@
 'use client';
 
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { Suspense, useRef } from 'react';
+import { Suspense } from 'react';
 import Loader from './loader/loader';
 import styles from './threeScene.module.css';
 import Church from './church/church';
 
 const Scene = () => {
-  const degToRad = (deg: number) => {
-    return deg * (Math.PI / 180);
-  };
-
   return (
     <div className={styles.scene}>
       <Canvas flat shadows dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>

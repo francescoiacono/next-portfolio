@@ -1,5 +1,4 @@
 import Section from '@/components/common/section/section';
-import styles from './contact.module.css';
 import Image from 'next/image';
 import ContactList from './contactList/contactList';
 

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './singleProject.module.css';
 import { Project } from '@/data';
 import ProjectButtons from '../projectButtons/projectButtons';
@@ -13,7 +12,7 @@ const SingleProject = ({ project }: SingleProjectProps) => {
     <div className={styles.singleProjectContainer}>
       <div className={styles.singleProjectInfo}>
         <div className={styles.text}>
-          <h3>{project.name}</h3>
+          <h2>{project.name}</h2>
           <p>{project.description}</p>
           <ProjectTechnologies technologies={project.technologies} />
           <ProjectButtons

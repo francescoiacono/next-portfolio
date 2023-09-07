@@ -26,6 +26,7 @@ const Hero = () => {
           width={250}
           height={250}
           alt='hero'
+          priority
         />
       </div>
     </Section>
