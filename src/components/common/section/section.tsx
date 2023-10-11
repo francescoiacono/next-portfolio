@@ -6,6 +6,7 @@ interface SectionProps {
   right?: boolean;
   id?: string;
   singleColumn?: boolean;
+  className?: string;
 }
 
 const Section = ({
@@ -14,14 +15,15 @@ const Section = ({
   right,
   id,
   singleColumn,
+  className,
 }: SectionProps) => {
   return (
     <section
       id={id}
       className={
         primary
-          ? `${styles.sectionContainer} ${styles.primary}`
-          : `${styles.sectionContainer} ${styles.secondary}`
+          ? `${styles.sectionContainer} ${styles.primary} ${className}}`
+          : `${styles.sectionContainer} ${styles.secondary} ${className}`
       }
     >
       <div

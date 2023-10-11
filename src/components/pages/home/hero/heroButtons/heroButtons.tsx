@@ -1,6 +1,6 @@
 'use client';
-import PrimaryButton from '@/components/ui/primaryButton/primaryButton';
 import { scrollTo } from '@/utils';
+import PrimaryButton from '@/components/ui/primaryButton/primaryButton';
 import styles from './heroButtons.module.css';
 
 const heroButtons = () => {
